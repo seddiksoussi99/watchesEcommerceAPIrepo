@@ -81,3 +81,17 @@ C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\obj\Debug\net9.0\r
 C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\obj\Debug\net9.0\WatchesEcommerce.pdb
 C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\obj\Debug\net9.0\WatchesEcommerce.genruntimeconfig.cache
 C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\obj\Debug\net9.0\ref\WatchesEcommerce.dll
+C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\obj\Debug\net9.0\WatchesEcommerce.sourcelink.json
+C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\bin\Debug\net9.0\Namotion.Reflection.dll
+C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\bin\Debug\net9.0\NJsonSchema.dll
+C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\bin\Debug\net9.0\NJsonSchema.Annotations.dll
+C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\bin\Debug\net9.0\NJsonSchema.NewtonsoftJson.dll
+C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\bin\Debug\net9.0\NJsonSchema.Yaml.dll
+C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\bin\Debug\net9.0\NSwag.Annotations.dll
+C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\bin\Debug\net9.0\NSwag.AspNetCore.dll
+C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\bin\Debug\net9.0\NSwag.Core.dll
+C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\bin\Debug\net9.0\NSwag.Core.Yaml.dll
+C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\bin\Debug\net9.0\NSwag.Generation.dll
+C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\bin\Debug\net9.0\NSwag.Generation.AspNetCore.dll
+C:\Users\Sedik\source\repos\WatchesEcommerce\WatchesEcommerce\bin\Debug\net9.0\YamlDotNet.dll

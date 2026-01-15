@@ -49,9 +49,30 @@ namespace WatchesEcommerce.Controllers
         {
             try
             {
-                _context.Customers.Add(customer);
-                _context.SaveChanges();
-                return Ok(customer);
+                var customerExists = _context.Customers.
+                    Any(c => c.first_name == customer.first_name
+                    && c.last_name == customer.last_name
+                    && c.phone == customer.phone);
+                if(customerExists) 
+                {
+                    var customerExist = _context.Customers.
+                        Single(c => c.first_name == customer.first_name
+                        && c.last_name == customer.last_name
+                        && c.phone == customer.phone);
+                    customerExist.city = customer.city;
+                    customerExist.address = customer.address;
+                    _context.Customers.Update(customerExist);
+                    _context.SaveChanges();
+
+                    return Ok(customerExist);
+                }
+                else
+                {
+                    _context.Customers.Add(customer);
+                    _context.SaveChanges();
+
+                    return Ok(customer);
+                }
             }
             catch
             {

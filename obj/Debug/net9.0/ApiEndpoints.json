@@ -116,6 +116,11 @@
         "Name": "searchPattern",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "pageNb",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

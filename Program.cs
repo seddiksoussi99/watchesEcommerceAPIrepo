@@ -16,20 +16,20 @@ namespace WatchesEcommerce
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-            builder.Services.AddOpenApi();
+            builder.Services.AddOpenApi().AddOpenApiDocument(d =>
+            {
+                d.Title = "WatchesEcommerce";
+            });
 
             builder.Services.AddDbContext<AppDbContext>(
                 options => options.UseSqlServer(builder.Configuration.GetConnectionString("conn"))
             );
-            builder.Services.AddCors(options =>
+            builder.Services.AddCors(c =>
             {
-                options.AddDefaultPolicy(builder =>
-                {
-                    builder.WithOrigins("http://localhost:4200") // Specify your frontend origin
-                           .AllowAnyMethod()
-                           .WithHeaders("Content-Type"); // Explicitly allow Content-Type
-                });
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
             });
+
+
 
             var app = builder.Build();
 
@@ -45,13 +45,15 @@ namespace WatchesEcommerce
             });
 
 
-            
-
-            app.UseCors();
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
+
+            app.UseOpenApi();
+
+            app.UseSwaggerUi();
 
 
             app.MapControllers();
